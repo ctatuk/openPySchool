@@ -1,2 +1,2 @@
-# openPySchool2021
+# openPySchool
 https://t.me/PythonLearning2020
