@@ -6,14 +6,11 @@ def days_to_birtday(month, day):
     birthday_in_this_year = date(int(current_year), month, day)
     birthday_in_next_year = date(int(current_year) + 1, month, day)
 
-    if birthday_in_this_year > today:
-        result = abs((birthday_in_this_year - today).days)
+    if birthday_in_this_year == today:
+        return 'Happy birthday!'
+    elif birthday_in_this_year > today:
+        return abs((birthday_in_this_year - today).days)
     else:
-        result = abs((birthday_in_next_year - today).days)
+        return abs((birthday_in_next_year - today).days)
 
-    return result
-
-month = 2
-day = 10
-
-print(days_to_birtday(month, day))
+print(days_to_birtday(2, 5))
