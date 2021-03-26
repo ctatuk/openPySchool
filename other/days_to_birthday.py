@@ -1,6 +1,6 @@
 from datetime import date
 
-def days_to_birtday(month, day):
+def days_to_birthday(month, day):
     today = date.today()
     # current_year = date.today().strftime("%Y")
     current_year = date.today().year
@@ -14,6 +14,6 @@ def days_to_birtday(month, day):
     else:
         return abs((birthday_in_next_year - today).days)
 
-print(days_to_birtday(1, 5))
+'''print(days_to_birtday(1, 5))
 print(days_to_birtday(2, 5))
-print(days_to_birtday(3, 15))
+print(days_to_birtday(3, 15))'''
